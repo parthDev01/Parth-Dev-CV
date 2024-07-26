@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Dev - CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1b0565;
+            color: #000000;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #181a1d;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        #showcase {
+            min-height: 400px;
+            background: url('https://source.unsplash.com/1600x900/?technology,engineering') no-repeat center center/cover;
+            text-align: center;
+            color: #f8f8f8;
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        footer {
+            background: #282c34;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #ff0000;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav ul li:hover {
+            background: #872104;
+        }
+        nav ul li a:hover {
+            color: #fff;
+        }
+        .content {
+            display: none;
+        }
+        .active-content {
+            display: block;
+        }
+    </style>
+    <script>
+        function showContent(sectionId) {
+            var sections = document.getElementsByClassName('content');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove('active-content');
+            }
+            document.getElementById(sectionId).classList.add('active-content');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Parth Dev</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="javascript:showContent('about')">About Me</a></li>
+                    <li><a href="javascript:showContent('skills')">Skills</a></li>
+                    <li><a href="javascript:showContent('experience')">Experience</a></li>
+                    <li><a href="javascript:showContent('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to My CV</h1>
+            <p>Your next best hire in Mechatronic Engineering</p>
+        </div>
+    </section>
+
+    <div id="about" class="section content active-content">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Parth Dev, a 23-year-old Mechatronic Engineering student at the University of Wollongong, Malaysia. Born in Bangalore, India, and currently residing in Kuala Lumpur, Malaysia, I'm a quick learner passionate about robotics, engineering, AI, and ML. I enjoy sports, watching F1, playing drums and guitar, and exploring new instruments. As an ambivert, I’m comfortable engaging in conversations or enjoying solitude. Additionally, I maintain a regular fitness routine.
+            </p>
+        </div>
+    </div>
+
+    <div id="skills" class="section content">
+        <div class="container">
+            <h2>Skills & Interests</h2>
+            <ul>
+                <li>Robotics</li>
+                <li>Mechatronics Engineering</li>
+                <li>Artificial Intelligence</li>
+                <li>Machine Learning</li>
+                <li>Programming (C, Python)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="experience" class="section content">
+        <div class="container">
+            <h2>Experience</h2>
+            <h3><strong> Galactic Advanced Engineering and Quantum Computing</strong></h3>
+            <ul>
+                
+                    <p><strong>an autonomous robot to clean solar panels using motor drivers, power converters, ESP microcontrollers, and C programming.</strong> </p>
+                
+                
+                    <p><strong> Optimum Matrix Development: Created a Machine Learning model to identify key variables for minimizing downtime and maximizing product quality using Python, RandomForest algorithm, and CSS. Developed a real-time dashboard for operators.</strong></p>
+                
+                
+                    <p><strong> Node-Red Implementation: Utilized Node-Red for data collection and manipulation from PLCs, and displayed results on dashboards. Integrated Node-Red with Python scripts and PLCs.</strong> </p>
+                
+                
+                    <p><strong> Local Dashboard Development: Designed dashboards using npm, JSX, HTML, and CSS for various clients.</strong> </p>
+                
+                
+                    <p><strong> Raspberry Pi Customization: Customized Raspberry Pi Compute Module 4 OS for specific applications.</strong> </p>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div id="contact" class="section content">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you are interested in learning more about me or have any job opportunities, feel free to contact me at:</p>
+            <p>Email: <a href="mailto:parthdev1994@gmail.com">parthdev1994@gmail.com</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Parth Dev &copy; 2024</p>
+    </footer>
+</body>
+</html>
